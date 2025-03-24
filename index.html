@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Senhas</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        #senhaAtual { font-size: 2em; margin-bottom: 20px; }
+        #statusWebSocket { font-size: 1.2em; margin-top: 20px; }
+        button { padding: 10px 20px; font-size: 1em; cursor: pointer; }
+    </style>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Painel de Senhas</h1>
+    <div id="senhaAtual">Senha Atual: 0</div>
+    <button onclick="chamarSenha()">Chamar Próxima Senha</button>
+    <div id="statusWebSocket">Status: Conectando...</div>
+</body>
+</html>
